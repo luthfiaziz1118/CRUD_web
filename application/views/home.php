@@ -109,27 +109,53 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <a class="nav-link" href="#">Pernikahan</a>
                                 </li>
                         	--> 	        
-                              <?php if($this->session->userdata('status') == "login_user"){?>
+                             
+                                <?php if($this->session->userdata('status') == "login_user"){?>
                                  <li class="nav-item">
                                     <a class="nav-link" href="<?php echo base_url().'home/reservasi';?>">Reservasi</a>
                                 </li>
-                                 <?php } else {?>
-                                    
-                                 <?php } ?>
-                                  <?php if($this->session->userdata('status') == "login_user" ){?>
+
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo base_url().'home/jadwal';?>">Jadwal</a>
+                                       <a class="nav-link" href="<?php echo base_url().'home/detail';?>">Detail</a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo base_url().'home/jadwalbooking';?>">Jadwal Booking</a>
                                 </li>
                                  <?php } else {?>
                                     
                                  <?php } ?>
+
+
+                                <?php if($this->session->userdata('status') == "login_user" ){?>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo base_url().'home/jadwal';?>">Daftar Reservasi</a>
+                                </li>
+                                <?php } else {?>
+                                    
+                                 <?php } ?>
+
+
+                                 <?php if($this->session->userdata('role') == 1 ){?>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo base_url().'home/daftaradmin';?>">Daftar Admin</a>
+                                </li>
+                                 <?php } else {?>
+                                    
+                                 <?php } ?>
+
+
                                 <?php if($this->session->userdata('status') == "login_user"){?>
                                  <li class="nav-item">
                                     <a class="nav-link" href="<?php echo base_url().'sewagedung/logout';?>">Log Out</a>
                                 </li>
                                  <?php } else {?>
-                                     <li class="nav-item">
+
+                                <li class="nav-item">
                                     <a class="nav-link" href="<?php echo base_url().'home/login';?>">Log in</a>
+                                </li>
+                                <li class="nav-item">
+                                       <a class="nav-link" href="<?php echo base_url().'home/detail';?>">Detail</a>
                                 </li>
                                  <?php } ?>
 

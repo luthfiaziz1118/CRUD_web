@@ -70,9 +70,67 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                  -->
                     </div>
                 </div>
-</div>
-       
-   
+            </div>
+        </div>
+    </div>
+    <!-- ****** Top Header Area End ****** -->
+
+    <!-- ****** Header Area Start ****** 
+    <header class="header_area">
+        <div class="container">
+            <div class="row">
+                 Logo Area Start 
+                <div class="col-12">
+                    <div class="logo_area text-center">
+                        <a class="yummy-logo">Sewa Gedung Online</a>
+                    </div>
+                </div>
+            </div>
+    -->
+            <!-- <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#yummyfood-nav" aria-controls="yummyfood-nav" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars" aria-hidden="true"></i> Menu</button>
+                         Menu Area Start 
+                        <div class="collapse navbar-collapse justify-content-center" id="yummyfood-nav">
+                            <ul class="navbar-nav" id="yummy-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="yummyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                                    <div class="dropdown-menu" aria-labelledby="yummyDropdown">
+                                        <a class="dropdown-item" href="index.html">Home</a>
+                                        <a class="dropdown-item" href="archive.html">Archive</a>
+                                        <a class="dropdown-item" href="single.html">Single Blog</a>
+                                        <a class="dropdown-item" href="static.html">Static Page</a>
+                                        <a class="dropdown-item" href="contact.html">Contact</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Categories</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="archive.html">Archive</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div> -->
+        </div>
+    </header>
+    <!-- ****** Header Area End ****** -->
+
     <!-- ****** Breadcumb Area Start ****** -->
 
     <div class="breadcumb-area" style="background-image: url(<?php echo base_url ('assets/img/bg-img/slide-4.jpg')?>);">
@@ -80,88 +138,100 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="bradcumb-title text-center">
-                        <h2>Detail Penyewaan</h2>
+                        <h2>Tambah Admin</h2>
                     </div>
                 </div>
             </div>
         </div>
-    </div> 
-            <center>
-                <div class="col-md-8">
-                    <br>
-                    <br>
-                    <p style="font-family: fantasy; font-size: 30px">Balai Sarita merupakan ruang serbaguna dengan luas 25x25 meter dan selasar terbuka 18x10 meter, mampu menampung maksimal 700 undangan (1400 orang) gedung ini berplafon emas dan gordyn dengan warna senada. keunggulan Balai Sarita terletak pada akses tol yang sangat bagus dan memiliki area parkir yang luas.</p> 
-                    
-
-                <div class="container">
-                    <div class="blog-post blog-single">          
-                        <div class="dez-post-text">
-                            
-                            <br>
-                            <br>
-                                <p style="font-family: verdana; border: solid 2px black; background-color: #f2f2f2; padding: 20px "><strong>Biaya Sewa 20.000.000,- </strong></p>
-                                <br>
-                                <br>
-
-                            <div style="font-family: lucida console"> 
-                                <strong><p>Pembayaran</p></strong>
-
-                                <p>Biaya DP sebesar 2jt Rupiah. Pembayaran dapat dilakukan via cash atau transfer ke <strong>(Rek. BSM 7114595297 an Peny Agustin) </strong>Pelunasan dilakukan 50% 2 bulan sebelum acara dan 50%&nbsp; 1 bulan sebelum acara. DP tidak dapat dikembalikan ketika terjadi pembatalan, pembatalan ini wajib dilakukan dalam jangka waktu 2 bulan sebelum hari H Acara dengan melapor kepada Officer kami. adapun mengenai perubahan tanggal, dipersilahkan dengan ketentuan 3 bulan sebelum hari H acara.</p>
-                            </div>
-                            <br>
-                            <br>
-
-                            <div style="font-family: verdana; border: solid 2px black; background-color: #f2f2f2; padding: 30px ">
-                                <p><strong>Fasilitas yang ditawarkan:</strong></p>
-
-                                <p>1. Kursi Aula</p>
-
-                                <p>2. Ruang Resepsi Maks. 700 Undangan</p>
-
-                                <p>3. Ruang Rias berkaca &amp; AC</p>
-
-                                <p>4. AC 5PK tersedia 8 buah</p>
-
-                                <p>5. Kursi 200 buah</p>
-
-                                <p>6. Panggun pelaminan</p>
-
-                                <p>7. panggung musik</p>
-
-                                <p>8. Pantry</p>
-
-                                <p>9. Penggunaan Gedung sampai pukul 14.00 WIB</p>
-                            </div>              
-                            <br>    
-                            <br>
-
-                            <div style="font-family: cursive; size: 20px">               
-                                <p><strong>Ketentuan Umum</strong></p>
-
-                                <p>Dilarang merokok dan mengotori area masjid andalusia, menjaga kesopanan dan memperhatikan batas suci masjid andalusia merupakan suatu keharusan.</p>
-
-                                <p>Calon mempelai hendaknya mencantumkan himbauan untuk mengenakan pakaian sopan dan berusaha menutup aurat saat akan menghadiri pernikahan di masjid andalusia.</p>
-
-                                <p>Musik yang diperbolehkan adalah selain dangdut dan rock keras. dianjurkan melantunkan musik islami. menghentikan musik pada waktu-waktu ibadah dan menganjurkan tamu untuk sholat tepat pada waktunya. serta memperhatikan polusi suara yang mungkin terjadi saat resepsi pernikahan</p>
-
-                                <p>Membicarakan dengan pihak manajemen gedung untuk membahas beberapa hal yang perlu seperti upacara adat, jenis musik yang digunakan, overtime, tambahan kursi apabila dibutuhkan tambahan sound system dan AC, pertunjukan DLL</p>
-
-                                <p>Catering yang digunakan dianjurkan catering rekanan dengan konsekuensi charge 20% apabila menggunakan catering non rekanan. charge dekorasi akan dikenakan 1,5 jt rupiah untuk kepentingan pemeliharaan gedung.</p>
-
-                                <br>
-                            </div>
-
-                                
-                                <p>&nbsp;</p>
-
-                                </div>
-                            </div>
+    </div>
+<!--    <div class="breadcumb-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Log in</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+-->    
+    <!-- ****** Breadcumb Area End ****** -->
+    <!--
+     ****** Contatc Area Start ****** 
+    <div class="contact-area section_padding_80">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="google-map-area">
+                        <div id="googleMap"></div>
+                    </div>
+                </div>
+            </div>
+-->
+            
+            <!-- Contact Form  -->
+            <div class="contact-form-area">
+                <div class="row">
+                    <!--
+                    <div class="col-12 col-md-5">
+                        <div class="contact-form-sidebar item wow fadeInUpBig" data-wow-delay="0.3s" style="background-image: url(<?php echo base_url ('assets/img/bg-img/slide-1.jpg')?>); border-radius: 20px; margin: 50px">
                         </div>
                     </div>
-                </center>
+                -->
+                
+                    <div class="col-12 col-md-7 item">
+                        <div class="contact-form wow fadeInUpBig" data-wow-delay="0.6s" style=" margin: 50px">
+                            <h2 class="contact-form-title mb-30"></h2>
+                            <!-- Contact Form -->
+                          <?php foreach($user as $admin){ ?>
+                          <form action="<?php echo base_url(). 'sewagedung/aksiupdateadmin'; ?>" method="post">
+                                <input name="id_user" type="hidden" class="form-control" placeholder="no" value="<?php echo $admin->id_user?>" required>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="contact-name" placeholder ="Nama Lengkap" name="namalengkap" value="<?php echo $admin->namalengkap ?>">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="contact-name" placeholder ="Email" name="email" value="<?php echo $admin->email ?>">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="contact-name" placeholder ="Telp" name="telp" value="<?php echo $admin->telp ?>">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="contact-name" placeholder ="Alamat" name="alamat" value="<?php echo $admin->alamat ?>">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="contact-name" placeholder ="Username" name="username" value="<?php echo $admin->username ?>">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="contact-email" placeholder ="Password" name="password" value="<?php echo $admin->password ?>">
+                                </div>
+                                <!-- <div class="form-group">
+                                    <input type="password" class="form-control" id="contact-email" placeholder ="Konfirmasi Password" name="konfirmpassword">
+                                </div> -->
+                                
+                                <button type="submit" class="nav-link" onclick="myFunction()">Update</button>
+                                <script>
+                                function myFunction() {
+                                alert("Data Berhasil Di Update");
+                                }
+                                </script>        
+                               <!--  <p>Belum punya akun ?<a href="<?php echo base_url().'home/reservasi';?>" class="read-more"> Klik disini</a></p> -->
+                                  </form>
+                            <?php } ?>
 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+ 
     <!-- ****** Footer Social Icon Area Start ****** -->
-  <!--   <div class="social_icon_area clearfix">
+    <div class="social_icon_area clearfix">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -183,19 +253,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
     <!-- ****** Footer Social Icon Area End ****** -->
 
     <!-- ****** Footer Menu Area Start ****** -->
     <footer class="footer_area">
-      <!--   <div class="container">
+        <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="footer-content">
-                        Logo Area Start
+                        <!-- Logo Area Start -->
                         <div class="footer-logo-area text-center">
                             <a class="yummy-logo">Sewa Gedung</a>
-                        </div> -->
+                        </div>
                         <!-- Menu Area Start -->
                         <!-- <nav class="navbar navbar-expand-lg">
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#yummyfood-footer-nav" aria-controls="yummyfood-footer-nav" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars" aria-hidden="true"></i> Menu</button>
@@ -224,7 +294,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </div>
                         </nav> -->
                     </div>
-                
+                </div>
             </div>
         </div>
 

@@ -41,6 +41,12 @@
 			$this->load->view('edit_reservasi',$data);
 		}
 
+
+		function editadmin($id_user){
+			$where = array('id_user' => $id_user);
+			$data['user'] = $this->M_sewa->edit_data($where,'user')->result();
+			$this->load->view('edit_admin',$data);
+		}
 		//aksi update data
 
 		public function aksiupdatedata(){
@@ -72,6 +78,32 @@
             redirect('home/jadwal');
         }
 
+
+        //updateadmin
+
+        public function aksiupdateadmin(){
+        $this->form_validation->set_rules('id_user', 'id_user', 'required');
+        // $this->form_validation->set_rules('pemilik', 'pemilik', 'required');
+
+        $id_user = $this->input->post('id_user');
+		$namalengkap = $this->input->post('namalengkap');
+		$email = $this->input->post('email');
+		$telp = $this->input->post('telp');
+		$alamat = $this->input->post('alamat');
+		{
+	        
+            $data = array(
+				'namalengkap' => $namalengkap,
+				'email' => $email,
+				'telp' => $telp,
+				'alamat' => $alamat,
+			);
+	        }
+
+            $this->M_sewa->update_admin($data,$id_user);
+            redirect('home/daftaradmin');
+        }
+
         //Hapus Data
 
         function hapusdata($id_reservasi){
@@ -82,6 +114,19 @@
 			else{
 			$this->M_sewa->hapus_data($data,$id_reservasi);
 			redirect('home/jadwal');
+			}
+		}
+
+		//hapusadmin
+
+		 function hapusadmin($id_user){
+			if($id_user==""){
+			$this->session->set_flashdata('error',"Data Anda Gagal Di Hapus");
+			redirect('home/daftaradmin');
+			}	
+			else{
+			$this->M_sewa->hapus_admin($data,$id_user);
+			redirect('home/daftaradmin');
 			}
 		}
 
@@ -110,6 +155,30 @@
 			$this->M_sewa->input_data($data,'user');
 			redirect('home/login');
 		}
+		//tambahadmin
+
+		function tambahadmin(){
+			$namalengkap = $this->input->post('namalengkap');
+			$email = $this->input->post('email');
+			$telp = $this->input->post('telp');
+			$alamat = $this->input->post('alamat');
+			$username = $this->input->post('username');
+			$password = $this->input->post('password');
+			
+
+			$data = array(
+				'namalengkap' => $namalengkap,
+				'email' => $email,
+				'telp' => $telp,
+				'alamat' => $alamat,
+				'username' => $username,
+				'password' => md5($password),
+				'role' => 1,
+			);
+
+			$this->M_sewa->input_data($data,'user');
+			redirect('home/daftaradmin');
+		}
 
 		//cek Login
 		function aksi_login_user(){
@@ -122,7 +191,6 @@
 		$cek = $this->M_sewa->cek_login("user",$where);
 		if($cek->num_rows() == 1){
 			foreach ($cek->result() as $session) {
-				$sess_data['id'] = $session->id;
 				$sess_data['username'] = $session->username;
 				$sess_data['role'] = $session->role;
 				$sess_data['status'] = 'login_user';

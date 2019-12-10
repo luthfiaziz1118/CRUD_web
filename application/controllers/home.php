@@ -24,6 +24,24 @@ class home extends CI_Controller {
 		}
 		
 	}
+	public function daftaradmin()
+	{
+		if($this->session->userdata('status') != "login_user"){
+			redirect(base_url("home/login"));
+		}else{
+			$data['user'] = $this->M_sewa->tampil_admin()->result();
+			$this->load->view('daftaradmin',$data);
+		}
+		
+	}
+	public function tambahadmin()
+	{
+		if($this->session->userdata('role') == 1){
+			$this->load->view('tambah_admin');
+		}else{
+			redirect(base_url("home/login"));
+		}
+	}
 	public function login()
 	{
 		$this->load->view('login');
@@ -35,6 +53,10 @@ class home extends CI_Controller {
 	public function detail()
 	{
 		$this->load->view('detail');
+	}
+	public function jadwalbooking()
+	{
+		$this->load->view('jadwalbooking');
 	}
 	public function jadwal()
 	{
